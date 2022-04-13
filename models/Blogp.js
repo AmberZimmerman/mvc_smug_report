@@ -1,10 +1,10 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-// bp stands for blog post
-class Bp extends Model {}
+// Blogpp stands for blog post
+class Blogp extends Model {}
 
-Bp.init(
+Blogp.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -45,4 +45,4 @@ Bp.init(
   }
 );
 
-module.exports = Bp;
+module.exports = Blogp;
