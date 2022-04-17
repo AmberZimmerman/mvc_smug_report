@@ -1,24 +1,53 @@
-header, .project:not(:last-child) {
-  border-bottom: 1px solid #ccc;
-}
-
-.no-button {
-  background: none;
-  border: none;
+* {
+  margin: 0;
   padding: 0;
-  cursor: pointer;
-  color: #1b89bc;
+}
+
+:root {
+  --blue: rgb(30, 76, 90);
+  --blue2: rgb(49, 132, 157);
+  --title-fonts: "Wallpoet";
+  --secondary-fonts: "Sarpanch"
+}
+
+.homepage {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+}
+
+nav {
+  flex: 1 0 100%;
+  background-color: black;
+  height: fit-content;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+  position: absolute;
+  width: 100vw;
+}
+
+ul {
   text-decoration: none;
-  font-size: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
-.no-button:hover {
-  color: #065b83;
-  text-decoration: underline;
+li {
+  color: white;
+  display: inline-block;
+  font-family: var(--title-fonts);
+  font-size: 30px;
+  text-align: center;
+  display: flex;
+  padding: 10px;
 }
 
-.dollar-amount {
-  color: #056605;
-  font-weight: bold;
-  margin-left: -5px;
+.log-in-area {
+  flex: 1 0 100%;
+  background-color:rgb(30, 76, 90);
+  height: 100%;
+  flex-flow: column;
+  width: 100%;
 }
