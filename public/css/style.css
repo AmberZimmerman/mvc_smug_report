@@ -10,6 +10,16 @@
   --secondary-fonts: "Sarpanch"
 }
 
+
+video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
 .homepage {
   display: flex;
   flex-wrap: wrap;
@@ -18,7 +28,7 @@
 
 nav {
   flex: 1 0 100%;
-  background-color: black;
+  background-color: rgba(30, 77, 92, 0.7);
   height: fit-content;
   display: inline-block;
   text-align: center;
@@ -32,22 +42,66 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  margin: 0;
 }
 
 li {
   color: white;
   display: inline-block;
   font-family: var(--title-fonts);
-  font-size: 30px;
+  font-size: 28px;
   text-align: center;
   display: flex;
   padding: 10px;
 }
 
-.log-in-area {
-  flex: 1 0 100%;
-  background-color:rgb(30, 76, 90);
-  height: 100%;
-  flex-flow: column;
-  width: 100%;
+h2 {
+  font-family: var(--title-fonts);
+  color: white;
 }
+
+.main {
+  flex: 1 0 100%;
+  /* background-color:rgb(30, 76, 90); */
+  height: auto;
+  flex-flow: column;
+  width: 100vw;
+  align-content: center;
+  justify-content: center;
+  display: flex;
+}
+
+.log-in-area {
+  width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.home-login-container,
+.home-sign-up-container {
+  width: 300px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(30, 77, 92, 0.7);
+  border-radius: 18%;
+  flex-wrap: wrap;
+}
+
+input {
+  display:block;
+  margin-top: 8px;
+  height: 28px;
+  width: 260px;
+  font-family: var(--secondary-fonts);
+}
+
+
